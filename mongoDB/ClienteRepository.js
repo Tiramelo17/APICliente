@@ -37,7 +37,7 @@ const atualizar = async (cliente) => {
     return null
   } else{
     const novoCliente = await ModelCliente.findOneAndUpdate(cliente._id,cliente)
-    return novoCliente
+    return cliente
   }
 }
 module.exports = {
